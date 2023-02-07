@@ -111,6 +111,20 @@ $ git commit -m &quot;commit info&quot;
 $ git pull
 $ git push -u main master
 </code></pre>
+<h3 id="Create-Token-for-login"><a href="#Create-Token-for-login" class="headerlink" title="Create Token for login"></a>Create Token for login</h3><p>This is an error because password authenticatio. we need a personal access token instead. The error as following:</p>
+<pre><code class="bash">Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for &#39;https://github.com/xxxxx/springcloud-config.git/
+</code></pre>
+<pre><code class="bash">1. Settings
+2. Developer settings
+3. Personal access tokens
+4. Generate new token
+5. Generate token
+6. Using this token for login
+</code></pre>
+<p>Reference： <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43806049/article/details/124963415">https://blog.csdn.net/weixin_43806049/article/details/124963415</a></p>
 
       
     </div>
