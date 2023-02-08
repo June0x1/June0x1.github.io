@@ -13,10 +13,12 @@
 <meta property="og:site_name" content="June0x1&#39;s Blog">
 <meta property="og:description" content="1-Git Create Repository1.1-Git Init$ git init (git init newrepo) $ git add . $ git add README.md $ git commit -m &quot;commit info&quot;  1.2-Git Clone$ git clone &lt;repo&gt; $ git clone &lt;repo&gt;">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://june0x1.github.io/2023/02/08/Git%20Tips/git-basic-operations.jpg">
 <meta property="article:published_time" content="2023-02-08T14:16:47.453Z">
-<meta property="article:modified_time" content="2023-02-08T14:31:58.493Z">
+<meta property="article:modified_time" content="2023-02-08T14:54:00.607Z">
 <meta property="article:author" content="June0x1">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://june0x1.github.io/2023/02/08/Git%20Tips/git-basic-operations.jpg">
   
     <link rel="alternate" href="/atom.xml" title="June0x1's Blog" type="application/atom+xml">
   
@@ -128,6 +130,24 @@ $ git config -e --global   # for all repository
 <p>Config user information:</p>
 <pre><code class="bash">$ git config --global user.name &quot;xxxx&quot;
 $ git config --global user.email xxxx@xxxx.com
+</code></pre>
+<h2 id="2-Git-Operations"><a href="#2-Git-Operations" class="headerlink" title="2-Git Operations"></a>2-Git Operations</h2><img src="git-basic-operations.jpg"/>
+
+<pre><code class="bash">$ git init      # init repository
+$ git clone     # clone a remote repository  
+$ git add       # add file to staging area
+$ git status    # view the repository status, show the changed file
+$ git diff      # view the difference of stating area and workspace
+$ git commit    # upload stating area to local repository
+$ git reset     # rollback the version
+$ git rm        # delete file from stating area and workspace
+$ git mv        # remove or rename workspace file
+$ git log       # view the history logs
+$ git blame &lt;file&gt; #view the histroy logs from blame
+$ git remote    # remote option
+$ git fetch     # download code from remote repository
+$ git pull      # download and merge code from remote repository 
+$ git push      # upload and merge code to remote repository 
 </code></pre>
 <p>Reference： <a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
 
