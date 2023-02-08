@@ -75,6 +75,75 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Git Tips" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/08/Git%20Tips/" class="article-date">
+  <time class="dt-published" datetime="2023-02-08T14:16:47.453Z" itemprop="datePublished">2023-02-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/02/08/Git%20Tips/">Git Tips</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Git-Create-Repository"><a href="#Git-Create-Repository" class="headerlink" title="Git Create Repository"></a>Git Create Repository</h2><h3 id="Git-Init"><a href="#Git-Init" class="headerlink" title="Git Init"></a>Git Init</h3><pre><code class="bash">$ git init (git init newrepo)
+$ git add .
+$ git add README.md
+$ git commit -m &quot;commit info&quot;
+</code></pre>
+<h3 id="Git-Clone"><a href="#Git-Clone" class="headerlink" title="Git Clone"></a>Git Clone</h3><pre><code class="bash">$ git clone &lt;repo&gt;
+$ git clone &lt;repo&gt; &lt;directory&gt;
+</code></pre>
+<p>For example:</p>
+<pre><code class="bash">$ git clone git://github.com/schacon/grit.git
+$ git clone git://github.com/schacon/grit.git mygrit
+</code></pre>
+<h3 id="Git-Config"><a href="#Git-Config" class="headerlink" title="Git Config"></a>Git Config</h3><p>Show git config information:</p>
+<pre><code class="bash">$ git config --list
+credential.helper=osxkeychain
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+</code></pre>
+<p>Edit git config file:</p>
+<pre><code class="bash">$ git config -e    # Junst for this repository
+$ git config -e --global   # for all repository
+</code></pre>
+<p>Config user information:</p>
+<pre><code class="bash">$ git config --global user.name &quot;xxxx&quot;
+$ git config --global user.email xxxx@xxxx.com
+</code></pre>
+<p>Reference： <a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://june0x1.github.io/2023/02/08/Git%20Tips/" data-id="cldvr8o0e000177jxc21xg29a" data-title="Git Tips" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Github repositories upload" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/02/04/Github%20repositories%20upload/" class="article-date">
@@ -266,6 +335,10 @@ $ hexo version
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/02/08/Git%20Tips/">Git Tips</a>
+          </li>
         
           <li>
             <a href="/2023/02/04/Github%20repositories%20upload/">Github Upload Tips</a>
