@@ -102,7 +102,30 @@ $ sudo dhclient ens33
 $ sudo ifconfig ens33
 $ sudo service network-manager restart
 </code></pre>
-<h3 id="1-2"><a href="#1-2" class="headerlink" title="1.2-"></a>1.2-</h3><h2 id="4-Reference"><a href="#4-Reference" class="headerlink" title="4-Reference"></a>4-Reference</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
+<h3 id="1-2-update-source"><a href="#1-2-update-source" class="headerlink" title="1.2-update source"></a>1.2-update source</h3><p>20.04:</p>
+<p>1.bak source file</p>
+<pre><code class="bash">$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+$ sudo vim/etc/apt/sources.list
+</code></pre>
+<p>2.update source link</p>
+<pre><code class="bash">$ deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+$ deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+$ deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+$ deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+$ deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
+$ deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+</code></pre>
+<p>3.update</p>
+<pre><code class="bash">$ sudo sudo apt-get update
+</code></pre>
+<p>4.upgrade</p>
+<pre><code class="bash">$ sudo sudo apt-get upgrade
+</code></pre>
+<h2 id="2-Reference"><a href="#2-Reference" class="headerlink" title="2-Reference"></a>2-Reference</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
 
       
     </div>
