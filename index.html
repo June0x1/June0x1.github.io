@@ -97,33 +97,33 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-Network"><a href="#1-Network" class="headerlink" title="1-Network"></a>1-Network</h2><h3 id="1-1-ifconfig-no-ipaddr"><a href="#1-1-ifconfig-no-ipaddr" class="headerlink" title="1.1-ifconfig no ipaddr"></a>1.1-ifconfig no ipaddr</h3><pre><code class="bash">$ ifconfig -a
-$ sudo dhclient ens33
-$ sudo ifconfig ens33
-$ sudo service network-manager restart
+        <h2 id="1-Network"><a href="#1-Network" class="headerlink" title="1-Network"></a>1-Network</h2><h3 id="1-1-ifconfig-no-ipaddr"><a href="#1-1-ifconfig-no-ipaddr" class="headerlink" title="1.1-ifconfig no ipaddr"></a>1.1-ifconfig no ipaddr</h3><pre><code class="bash">ifconfig -a
+sudo dhclient ens33
+sudo ifconfig ens33
+sudo service network-manager restart
 </code></pre>
 <h3 id="1-2-update-source"><a href="#1-2-update-source" class="headerlink" title="1.2-update source"></a>1.2-update source</h3><p>20.04:</p>
 <p>1.bak source file</p>
-<pre><code class="bash">$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-$ sudo vim/etc/apt/sources.list
+<pre><code class="bash">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo vim/etc/apt/sources.list
 </code></pre>
 <p>2.update source link</p>
-<pre><code class="bash">$ deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+<pre><code class="bash">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 </code></pre>
 <p>3.update</p>
-<pre><code class="bash">$ sudo sudo apt-get update
+<pre><code class="bash">sudo sudo apt-get update
 </code></pre>
 <p>4.upgrade</p>
-<pre><code class="bash">$ sudo sudo apt-get upgrade
+<pre><code class="bash">sudo sudo apt-get upgrade
 </code></pre>
 <h2 id="2-Reference"><a href="#2-Reference" class="headerlink" title="2-Reference"></a>2-Reference</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
 
@@ -164,20 +164,20 @@ $ deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted univ
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-Git-Create-Repository"><a href="#1-Git-Create-Repository" class="headerlink" title="1-Git Create Repository"></a>1-Git Create Repository</h2><h3 id="1-1-Git-Init"><a href="#1-1-Git-Init" class="headerlink" title="1.1-Git Init"></a>1.1-Git Init</h3><pre><code class="bash">$ git init (git init newrepo)
-$ git add .
-$ git add README.md
-$ git commit -m &quot;commit info&quot;
+        <h2 id="1-Git-Create-Repository"><a href="#1-Git-Create-Repository" class="headerlink" title="1-Git Create Repository"></a>1-Git Create Repository</h2><h3 id="1-1-Git-Init"><a href="#1-1-Git-Init" class="headerlink" title="1.1-Git Init"></a>1.1-Git Init</h3><pre><code class="bash">git init (git init newrepo)
+git add .
+git add README.md
+git commit -m &quot;commit info&quot;
 </code></pre>
-<h3 id="1-2-Git-Clone"><a href="#1-2-Git-Clone" class="headerlink" title="1.2-Git Clone"></a>1.2-Git Clone</h3><pre><code class="bash">$ git clone &lt;repo&gt;
-$ git clone &lt;repo&gt; &lt;directory&gt;
+<h3 id="1-2-Git-Clone"><a href="#1-2-Git-Clone" class="headerlink" title="1.2-Git Clone"></a>1.2-Git Clone</h3><pre><code class="bash">git clone &lt;repo&gt;
+git clone &lt;repo&gt; &lt;directory&gt;
 </code></pre>
 <p>For example:</p>
-<pre><code class="bash">$ git clone git://github.com/schacon/grit.git
-$ git clone git://github.com/schacon/grit.git mygrit
+<pre><code class="bash">git clone git://github.com/schacon/grit.git
+git clone git://github.com/schacon/grit.git mygrit
 </code></pre>
 <h3 id="1-3-Git-Config"><a href="#1-3-Git-Config" class="headerlink" title="1.3-Git Config"></a>1.3-Git Config</h3><p>Show git config information:</p>
-<pre><code class="bash">$ git config --list
+<pre><code class="bash">git config --list
 credential.helper=osxkeychain
 core.repositoryformatversion=0
 core.filemode=true
@@ -187,44 +187,44 @@ core.ignorecase=true
 core.precomposeunicode=true
 </code></pre>
 <p>Edit git config file:</p>
-<pre><code class="bash">$ git config -e    # Junst for this repository
-$ git config -e --global   # for all repository
+<pre><code class="bash">git config -e    # Junst for this repository
+git config -e --global   # for all repository
 </code></pre>
 <p>Config user information:</p>
-<pre><code class="bash">$ git config --global user.name &quot;xxxx&quot;
-$ git config --global user.email xxxx@xxxx.com
+<pre><code class="bash">git config --global user.name &quot;xxxx&quot;
+git config --global user.email xxxx@xxxx.com
 </code></pre>
 <h2 id="2-Git-Operations"><a href="#2-Git-Operations" class="headerlink" title="2-Git Operations"></a>2-Git Operations</h2><p><img src="https://www.runoob.com/wp-content/uploads/2015/02/git-command.jpg" alt="Git basic operations"></p>
-<pre><code class="bash">$ git init      # init repository
-$ git clone     # clone a remote repository  
-$ git add       # add file to staging area
-$ git status    # view the repository status, show the changed file
-$ git diff      # view the difference of stating area and workspace
-$ git commit    # upload stating area to local repository
-$ git reset     # rollback the version
-$ git rm        # delete file from stating area and workspace
-$ git mv        # remove or rename workspace file
-$ git log       # view the history logs
-$ git blame &lt;file&gt; #view the histroy logs from blame
-$ git remote    # remote option
-$ git fetch     # download code from remote repository
-$ git pull      # download and merge code from remote repository 
-$ git push      # upload and merge code to remote repository 
+<pre><code class="bash">git init      # init repository
+git clone     # clone a remote repository  
+git add       # add file to staging area
+git status    # view the repository status, show the changed file
+git diff      # view the difference of stating area and workspace
+git commit    # upload stating area to local repository
+git reset     # rollback the version
+git rm        # delete file from stating area and workspace
+git mv        # remove or rename workspace file
+git log       # view the history logs
+git blame &lt;file&gt; #view the histroy logs from blame
+git remote    # remote option
+git fetch     # download code from remote repository
+git pull      # download and merge code from remote repository 
+git push      # upload and merge code to remote repository 
 </code></pre>
 <h2 id="3-Git-lfs-install-and-upload-step"><a href="#3-Git-lfs-install-and-upload-step" class="headerlink" title="3-Git lfs install and upload step"></a>3-Git lfs install and upload step</h2><p>Git lfs is a tool for upload big file to github. install step as follow:</p>
-<pre><code class="bash">$ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-$ sudo apt-get install git-lfs
-$ git lfs install
+<pre><code class="bash">curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+git lfs install
 </code></pre>
 <p>upload step:</p>
-<pre><code class="bash">$ git lfs track &quot;file&quot;
-$ git add .gitattributes
-$ git commit -m &quot;submit file&quot;
-$ git push -u origin main 
+<pre><code class="bash">git lfs track &quot;file&quot;
+git add .gitattributes
+git commit -m &quot;submit file&quot;
+git push -u origin main 
 
-$ git add file
-$ git commit -m &quot;add file&quot;
-$ git push -u origin main
+git add file
+git commit -m &quot;add file&quot;
+git push -u origin main
 </code></pre>
 <h2 id="4-Reference"><a href="#4-Reference" class="headerlink" title="4-Reference"></a>4-Reference</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
 
@@ -265,19 +265,19 @@ $ git push -u origin main
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="Github-repositories-upload"><a href="#Github-repositories-upload" class="headerlink" title="Github repositories upload"></a>Github repositories upload</h3><pre><code class="bash">$ echo &quot;# Test&quot; &gt;&gt; README.md
-$ git init
-$ git add .
-$ git add README.md
-$ git commit -m &quot;commit info&quot;
-$ git remote add main https://github.com/xxxxxxx/Test.git
-$ git push -u origin main
+        <h3 id="Github-repositories-upload"><a href="#Github-repositories-upload" class="headerlink" title="Github repositories upload"></a>Github repositories upload</h3><pre><code class="bash">echo &quot;# Test&quot; &gt;&gt; README.md
+git init
+git add .
+git add README.md
+git commit -m &quot;commit info&quot;
+git remote add main https://github.com/xxxxxxx/Test.git
+git push -u origin main
 </code></pre>
-<h3 id="Github-repositories-update"><a href="#Github-repositories-update" class="headerlink" title="Github repositories update"></a>Github repositories update</h3><pre><code class="bash">$ git status
-$ git add .
-$ git commit -m &quot;commit info&quot;
-$ git pull
-$ git push -u origin main
+<h3 id="Github-repositories-update"><a href="#Github-repositories-update" class="headerlink" title="Github repositories update"></a>Github repositories update</h3><pre><code class="bash">git status
+git add .
+git commit -m &quot;commit info&quot;
+git pull
+git push -u origin main
 </code></pre>
 <h3 id="Create-Token-for-login"><a href="#Create-Token-for-login" class="headerlink" title="Create Token for login"></a>Create Token for login</h3><p>This is an error because password authenticatio. we need a personal access token instead. The error as following:</p>
 <pre><code class="bash">Logon failed, use ctrl+c to cancel basic credential prompt.
@@ -332,40 +332,40 @@ fatal: Authentication failed for &#39;https://github.com/xxxxx/springcloud-confi
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>This is the first post about <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> blog. There are some steps about how to create a bolg using GitHub Page.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Install-git-nodejs-npm-hexo"><a href="#Install-git-nodejs-npm-hexo" class="headerlink" title="Install git, nodejs, npm, hexo"></a>Install git, nodejs, npm, hexo</h3><pre><code class="bash">$ sudo apt-get install git
-$ sudo apt-get install npm
-$ sudo apt-get install nodejs
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Install-git-nodejs-npm-hexo"><a href="#Install-git-nodejs-npm-hexo" class="headerlink" title="Install git, nodejs, npm, hexo"></a>Install git, nodejs, npm, hexo</h3><pre><code class="bash">sudo apt-get install git
+sudo apt-get install npm
+sudo apt-get install nodejs
 </code></pre>
 <p>If the nodejs version is below 18.x, please update it.</p>
-<pre><code class="bash">$ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-$ sudo apt-get install -y nodejs
+<pre><code class="bash">curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 </code></pre>
 <p>Install hexo</p>
-<pre><code class="bash">$ npm install hexo -g
+<pre><code class="bash">npm install hexo -g
 </code></pre>
 <p>Test hexo version</p>
-<pre><code class="bash">$ hexo -v
+<pre><code class="bash">hexo -v
 </code></pre>
 <p>Install hexo git deployer tools</p>
-<pre><code class="bash">$ npm install --save hexo-deployer-git
+<pre><code class="bash">npm install --save hexo-deployer-git
 </code></pre>
 <h3 id="Github-config"><a href="#Github-config" class="headerlink" title="Github config"></a>Github config</h3><p>Generate ssh key</p>
-<pre><code class="bash">$ ssh-keygen -t rsa -C &quot;mailaddress@xx.com&quot;
+<pre><code class="bash">ssh-keygen -t rsa -C &quot;mailaddress@xx.com&quot;
 </code></pre>
 <p>Create a new ssh-key, then put the key(in the &#x2F;home&#x2F;xx&#x2F;.ssh&#x2F;id_rsa.pub) into the ssh-rsa value.</p>
 <p>Test it</p>
-<pre><code class="bash">$ ssh -T git@github.com
+<pre><code class="bash">ssh -T git@github.com
 </code></pre>
 <p>Config the github account</p>
-<pre><code class="bash">$ git config --global user.name &quot;username&quot; 
-$ git config --global user.email &quot;username@xx.com&quot; 
+<pre><code class="bash">git config --global user.name &quot;username&quot; 
+git config --global user.email &quot;username@xx.com&quot; 
 </code></pre>
 <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><p>Start the hello world page</p>
-<pre><code class="bash">$ hexo init  #init the blog
+<pre><code class="bash">hexo init  #init the blog
 
-$ hexo g     #generate the static pages
+hexo g     #generate the static pages
 
-$ hexo s     #start the local site http://localhost:4000/
+hexo s     #start the local site http://localhost:4000/
 </code></pre>
 <p>Update the config, please edit the _config.yml.</p>
 <h3 id="Upload-to-Github"><a href="#Upload-to-Github" class="headerlink" title="Upload to Github"></a>Upload to Github</h3><p>Create a new respository, name is username.github.io.</p>
@@ -376,17 +376,17 @@ $ hexo s     #start the local site http://localhost:4000/
   branch: main
 </code></pre>
 <p>upload to Github</p>
-<pre><code class="bash">$ hexo clean
-$ hexo g
-$ hexo d 
+<pre><code class="bash">hexo clean
+hexo g
+hexo d 
 </code></pre>
-<h3 id="Some-hexo-command"><a href="#Some-hexo-command" class="headerlink" title="Some hexo command"></a>Some hexo command</h3><pre><code class="bash">$ hexo new &quot;postName&quot;
-$ hexo new page &quot;pageName&quot;
-$ hexo generate
-$ hexo server
-$ hexo deploy
-$ hexo help
-$ hexo version
+<h3 id="Some-hexo-command"><a href="#Some-hexo-command" class="headerlink" title="Some hexo command"></a>Some hexo command</h3><pre><code class="bash">hexo new &quot;postName&quot;
+hexo new page &quot;pageName&quot;
+hexo generate
+hexo server
+hexo deploy
+hexo help
+hexo version
 </code></pre>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d78adad4705f">Generate hexo blog using Github page</a></p>
 

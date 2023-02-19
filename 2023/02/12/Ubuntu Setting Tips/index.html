@@ -6,15 +6,15 @@
   
   <title>Ubuntu Setting Tips | June0x1&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="1-Network1.1-ifconfig no ipaddr$ ifconfig -a $ sudo dhclient ens33 $ sudo ifconfig ens33 $ sudo service network-manager restart  1.2-update source20.04: 1.bak source file $ sudo cp &#x2F;etc&#x2F;apt&#x2F;sources.li">
+  <meta name="description" content="1-Network1.1-ifconfig no ipaddrifconfig -a sudo dhclient ens33 sudo ifconfig ens33 sudo service network-manager restart  1.2-update source20.04: 1.bak source file sudo cp &#x2F;etc&#x2F;apt&#x2F;sources.list &#x2F;etc&#x2F;ap">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu Setting Tips">
 <meta property="og:url" content="https://june0x1.github.io/2023/02/12/Ubuntu%20Setting%20Tips/index.html">
 <meta property="og:site_name" content="June0x1&#39;s Blog">
-<meta property="og:description" content="1-Network1.1-ifconfig no ipaddr$ ifconfig -a $ sudo dhclient ens33 $ sudo ifconfig ens33 $ sudo service network-manager restart  1.2-update source20.04: 1.bak source file $ sudo cp &#x2F;etc&#x2F;apt&#x2F;sources.li">
+<meta property="og:description" content="1-Network1.1-ifconfig no ipaddrifconfig -a sudo dhclient ens33 sudo ifconfig ens33 sudo service network-manager restart  1.2-update source20.04: 1.bak source file sudo cp &#x2F;etc&#x2F;apt&#x2F;sources.list &#x2F;etc&#x2F;ap">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-12T08:37:33.794Z">
-<meta property="article:modified_time" content="2023-02-13T14:24:35.838Z">
+<meta property="article:modified_time" content="2023-02-19T12:09:15.657Z">
 <meta property="article:author" content="June0x1">
 <meta name="twitter:card" content="summary">
   
@@ -99,33 +99,33 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-Network"><a href="#1-Network" class="headerlink" title="1-Network"></a>1-Network</h2><h3 id="1-1-ifconfig-no-ipaddr"><a href="#1-1-ifconfig-no-ipaddr" class="headerlink" title="1.1-ifconfig no ipaddr"></a>1.1-ifconfig no ipaddr</h3><pre><code class="bash">$ ifconfig -a
-$ sudo dhclient ens33
-$ sudo ifconfig ens33
-$ sudo service network-manager restart
+        <h2 id="1-Network"><a href="#1-Network" class="headerlink" title="1-Network"></a>1-Network</h2><h3 id="1-1-ifconfig-no-ipaddr"><a href="#1-1-ifconfig-no-ipaddr" class="headerlink" title="1.1-ifconfig no ipaddr"></a>1.1-ifconfig no ipaddr</h3><pre><code class="bash">ifconfig -a
+sudo dhclient ens33
+sudo ifconfig ens33
+sudo service network-manager restart
 </code></pre>
 <h3 id="1-2-update-source"><a href="#1-2-update-source" class="headerlink" title="1.2-update source"></a>1.2-update source</h3><p>20.04:</p>
 <p>1.bak source file</p>
-<pre><code class="bash">$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-$ sudo vim/etc/apt/sources.list
+<pre><code class="bash">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo vim/etc/apt/sources.list
 </code></pre>
 <p>2.update source link</p>
-<pre><code class="bash">$ deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
-$ deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
-$ deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+<pre><code class="bash">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 </code></pre>
 <p>3.update</p>
-<pre><code class="bash">$ sudo sudo apt-get update
+<pre><code class="bash">sudo sudo apt-get update
 </code></pre>
 <p>4.upgrade</p>
-<pre><code class="bash">$ sudo sudo apt-get upgrade
+<pre><code class="bash">sudo sudo apt-get upgrade
 </code></pre>
 <h2 id="2-Reference"><a href="#2-Reference" class="headerlink" title="2-Reference"></a>2-Reference</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
 
