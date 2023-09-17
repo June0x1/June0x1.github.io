@@ -75,6 +75,96 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Ubuntu Setting Tips" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/17/Ubuntu%20Setting%20Tips/" class="article-date">
+  <time class="dt-published" datetime="2023-09-17T09:48:09.165Z" itemprop="datePublished">2023-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/17/Ubuntu%20Setting%20Tips/">Ubuntu Setting Tips</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1-Network"><a href="#1-Network" class="headerlink" title="1-Network"></a>1-Network</h2><h3 id="1-1-ifconfig-no-ipaddr"><a href="#1-1-ifconfig-no-ipaddr" class="headerlink" title="1.1-ifconfig no ipaddr"></a>1.1-ifconfig no ipaddr</h3><pre><code class="bash">ifconfig -a
+sudo dhclient ens33
+sudo ifconfig ens33
+sudo service network-manager restart
+</code></pre>
+<h3 id="1-2-update-source"><a href="#1-2-update-source" class="headerlink" title="1.2-update source"></a>1.2-update source</h3><p>20.04:<br>20.04:</p>
+<p>1.bak source file</p>
+<pre><code class="bash">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo vim/etc/apt/sources.list
+</code></pre>
+<p>2.update source link</p>
+<pre><code class="bash">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+</code></pre>
+<p>3.update</p>
+<pre><code class="bash">sudo sudo apt-get update
+</code></pre>
+<p>4.upgrade</p>
+<pre><code class="bash">sudo sudo apt-get upgrade
+</code></pre>
+<h2 id="2-Mount-Disk"><a href="#2-Mount-Disk" class="headerlink" title="2-Mount Disk"></a>2-Mount Disk</h2><h3 id="2-1-Find-all-partition"><a href="#2-1-Find-all-partition" class="headerlink" title="2.1-Find all partition"></a>2.1-Find all partition</h3><pre><code class="bash">sudo fdisk -lu
+</code></pre>
+<p>This command will find the new partition info.</p>
+<h3 id="2-2-Partition-the-disk"><a href="#2-2-Partition-the-disk" class="headerlink" title="2.2-Partition the disk"></a>2.2-Partition the disk</h3><pre><code class="bash">sudo fdisk /dev/sdb
+m
+n
+p
+w
+</code></pre>
+<h3 id="2-3-Find-the-new-partition"><a href="#2-3-Find-the-new-partition" class="headerlink" title="2.3-Find the new partition"></a>2.3-Find the new partition</h3><pre><code class="bash">sudo fdisk -lu
+</code></pre>
+<h3 id="2-4-Format-the-disk"><a href="#2-4-Format-the-disk" class="headerlink" title="2.4-Format the disk"></a>2.4-Format the disk</h3><pre><code class="bash">sudo mkfs -t ext4 /dev/sdb6
+</code></pre>
+<h3 id="2-5-Mount"><a href="#2-5-Mount" class="headerlink" title="2.5-Mount"></a>2.5-Mount</h3><pre><code class="bash">cd /home
+sudo mkdir /home/newdir
+sudo mount /dev/sdb6 /home/newdir
+df -h
+</code></pre>
+<h3 id="2-6-Setting-auto-mount"><a href="#2-6-Setting-auto-mount" class="headerlink" title="2.6-Setting auto mount"></a>2.6-Setting auto mount</h3><pre><code class="bash">sudo gedit /etc/fstab
+add the new line:
+/dev/sdb6   /home/newdir    ext4    defaults    0   1  
+</code></pre>
+<h3 id="2-7-Reference"><a href="#2-7-Reference" class="headerlink" title="2.7-Reference"></a>2.7-Reference</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/caiguanhong/article/details/114583839">https://blog.csdn.net/caiguanhong/article/details/114583839</a></p>
+<h2 id="3-Reference"><a href="#3-Reference" class="headerlink" title="3-Reference"></a>3-Reference</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://june0x1.github.io/2023/09/17/Ubuntu%20Setting%20Tips/" data-id="clektlumq0006d7jx269ya6mg" data-title="Ubuntu Setting Tips" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Doc" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/02/20/Doc/" class="article-date">
@@ -104,73 +194,6 @@
     </div>
     <footer class="article-footer">
       <a data-url="https://june0x1.github.io/2023/02/20/Doc/" data-id="clektluml0001d7jx1mq56s5x" data-title="Doc Resource" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Ubuntu Setting Tips" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/02/12/Ubuntu%20Setting%20Tips/" class="article-date">
-  <time class="dt-published" datetime="2023-02-12T08:37:33.794Z" itemprop="datePublished">2023-02-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/12/Ubuntu%20Setting%20Tips/">Ubuntu Setting Tips</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="1-Network"><a href="#1-Network" class="headerlink" title="1-Network"></a>1-Network</h2><h3 id="1-1-ifconfig-no-ipaddr"><a href="#1-1-ifconfig-no-ipaddr" class="headerlink" title="1.1-ifconfig no ipaddr"></a>1.1-ifconfig no ipaddr</h3><pre><code class="bash">ifconfig -a
-sudo dhclient ens33
-sudo ifconfig ens33
-sudo service network-manager restart
-</code></pre>
-<h3 id="1-2-update-source"><a href="#1-2-update-source" class="headerlink" title="1.2-update source"></a>1.2-update source</h3><p>20.04:</p>
-<p>1.bak source file</p>
-<pre><code class="bash">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-sudo vim/etc/apt/sources.list
-</code></pre>
-<p>2.update source link</p>
-<pre><code class="bash">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
-deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
-deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
-deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
-deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse 
-deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse 
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse 
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse 
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse 
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
-</code></pre>
-<p>3.update</p>
-<pre><code class="bash">sudo sudo apt-get update
-</code></pre>
-<p>4.upgrade</p>
-<pre><code class="bash">sudo sudo apt-get upgrade
-</code></pre>
-<h2 id="2-Reference"><a href="#2-Reference" class="headerlink" title="2-Reference"></a>2-Reference</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">https://www.runoob.com/git</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://june0x1.github.io/2023/02/12/Ubuntu%20Setting%20Tips/" data-id="clektlumq0006d7jx269ya6mg" data-title="Ubuntu Setting Tips" class="article-share-link">Share</a>
       
       
       
@@ -469,7 +492,7 @@ hexo version
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
     </div>
   </div>
 
@@ -482,11 +505,11 @@ hexo version
       <ul>
         
           <li>
-            <a href="/2023/02/20/Doc/">Doc Resource</a>
+            <a href="/2023/09/17/Ubuntu%20Setting%20Tips/">Ubuntu Setting Tips</a>
           </li>
         
           <li>
-            <a href="/2023/02/12/Ubuntu%20Setting%20Tips/">Ubuntu Setting Tips</a>
+            <a href="/2023/02/20/Doc/">Doc Resource</a>
           </li>
         
           <li>
