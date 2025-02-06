@@ -153,7 +153,7 @@ add the new line:
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://june0x1.github.io/2023/09/17/Ubuntu%20Setting%20Tips/" data-id="clektlumq0006d7jx269ya6mg" data-title="Ubuntu Setting Tips" class="article-share-link">Share</a>
+      <a data-url="https://june0x1.github.io/2023/09/17/Ubuntu%20Setting%20Tips/" data-id="cm6teaocr0006gejx948h3w2s" data-title="Ubuntu Setting Tips" class="article-share-link">Share</a>
       
       
       
@@ -165,10 +165,10 @@ add the new line:
 
 
   
-    <article id="post-Doc" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Github repositories upload" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/02/20/Doc/" class="article-date">
-  <time class="dt-published" datetime="2023-02-20T15:01:17.393Z" itemprop="datePublished">2023-02-20</time>
+    <a href="/2023/09/17/Github%20repositories%20upload/" class="article-date">
+  <time class="dt-published" datetime="2023-09-17T09:48:09.153Z" itemprop="datePublished">2023-09-17</time>
 </a>
     
   </div>
@@ -179,7 +179,7 @@ add the new line:
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/20/Doc/">Doc Resource</a>
+      <a class="p-name article-title" href="/2023/09/17/Github%20repositories%20upload/">Github Upload Tips</a>
     </h1>
   
 
@@ -187,13 +187,39 @@ add the new line:
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-Reference"><a href="#1-Reference" class="headerlink" title="1-Reference"></a>1-Reference</h2><p><a target="_blank" rel="noopener" href="https://github.com/stelectronic/doc">Linux Device Drivers</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/lancyxd/pythoncore3">Core Python Application Programming</a></p>
+        <h3 id="Github-repositories-upload"><a href="#Github-repositories-upload" class="headerlink" title="Github repositories upload"></a>Github repositories upload</h3><pre><code class="bash">echo &quot;# Test&quot; &gt;&gt; README.md
+git init
+git add .
+git add README.md
+git commit -m &quot;commit info&quot;
+git remote add main https://github.com/xxxxxxx/Test.git
+git push -u origin main
+</code></pre>
+<h3 id="Github-repositories-update"><a href="#Github-repositories-update" class="headerlink" title="Github repositories update"></a>Github repositories update</h3><pre><code class="bash">git status
+git add .
+git commit -m &quot;commit info&quot;
+git pull
+git push -u origin main
+</code></pre>
+<h3 id="Create-Token-for-login"><a href="#Create-Token-for-login" class="headerlink" title="Create Token for login"></a>Create Token for login</h3><p>This is an error because password authenticatio. we need a personal access token instead. The error as following:</p>
+<pre><code class="bash">Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for &#39;https://github.com/xxxxx/springcloud-config.git/
+</code></pre>
+<pre><code class="bash">1. Settings
+2. Developer settings
+3. Personal access tokens
+4. Generate new token
+5. Generate token
+6. Using this token for login
+</code></pre>
+<p>Reference： <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43806049/article/details/124963415">https://blog.csdn.net/weixin_43806049/article/details/124963415</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://june0x1.github.io/2023/02/20/Doc/" data-id="clektluml0001d7jx1mq56s5x" data-title="Doc Resource" class="article-share-link">Share</a>
+      <a data-url="https://june0x1.github.io/2023/09/17/Github%20repositories%20upload/" data-id="cm6teaocq0004gejxc8ce4z3z" data-title="Github Upload Tips" class="article-share-link">Share</a>
       
       
       
@@ -207,8 +233,8 @@ add the new line:
   
     <article id="post-Git Tips" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/02/08/Git%20Tips/" class="article-date">
-  <time class="dt-published" datetime="2023-02-08T14:16:47.453Z" itemprop="datePublished">2023-02-08</time>
+    <a href="/2023/09/17/Git%20Tips/" class="article-date">
+  <time class="dt-published" datetime="2023-09-17T09:48:09.141Z" itemprop="datePublished">2023-09-17</time>
 </a>
     
   </div>
@@ -219,7 +245,7 @@ add the new line:
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/08/Git%20Tips/">Git Tips</a>
+      <a class="p-name article-title" href="/2023/09/17/Git%20Tips/">Git Tips</a>
     </h1>
   
 
@@ -300,73 +326,7 @@ git merge dev
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://june0x1.github.io/2023/02/08/Git%20Tips/" data-id="clektlumo0003d7jx8x4a7lyt" data-title="Git Tips" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Github repositories upload" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/02/04/Github%20repositories%20upload/" class="article-date">
-  <time class="dt-published" datetime="2023-02-05T05:36:08.909Z" itemprop="datePublished">2023-02-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/04/Github%20repositories%20upload/">Github Upload Tips</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="Github-repositories-upload"><a href="#Github-repositories-upload" class="headerlink" title="Github repositories upload"></a>Github repositories upload</h3><pre><code class="bash">echo &quot;# Test&quot; &gt;&gt; README.md
-git init
-git add .
-git add README.md
-git commit -m &quot;commit info&quot;
-git remote add main https://github.com/xxxxxxx/Test.git
-git push -u origin main
-</code></pre>
-<h3 id="Github-repositories-update"><a href="#Github-repositories-update" class="headerlink" title="Github repositories update"></a>Github repositories update</h3><pre><code class="bash">git status
-git add .
-git commit -m &quot;commit info&quot;
-git pull
-git push -u origin main
-</code></pre>
-<h3 id="Create-Token-for-login"><a href="#Create-Token-for-login" class="headerlink" title="Create Token for login"></a>Create Token for login</h3><p>This is an error because password authenticatio. we need a personal access token instead. The error as following:</p>
-<pre><code class="bash">Logon failed, use ctrl+c to cancel basic credential prompt.
-remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
-remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
-fatal: Authentication failed for &#39;https://github.com/xxxxx/springcloud-config.git/
-</code></pre>
-<pre><code class="bash">1. Settings
-2. Developer settings
-3. Personal access tokens
-4. Generate new token
-5. Generate token
-6. Using this token for login
-</code></pre>
-<p>Reference： <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43806049/article/details/124963415">https://blog.csdn.net/weixin_43806049/article/details/124963415</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://june0x1.github.io/2023/02/04/Github%20repositories%20upload/" data-id="clektlumq0005d7jx0lm55s2f" data-title="Github Upload Tips" class="article-share-link">Share</a>
+      <a data-url="https://june0x1.github.io/2023/09/17/Git%20Tips/" data-id="cm6teaoco0003gejx2sl85ppi" data-title="Git Tips" class="article-share-link">Share</a>
       
       
       
@@ -380,8 +340,8 @@ fatal: Authentication failed for &#39;https://github.com/xxxxx/springcloud-confi
   
     <article id="post-How to create a hexo blog using Github page" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/02/04/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/" class="article-date">
-  <time class="dt-published" datetime="2023-02-05T03:39:14.477Z" itemprop="datePublished">2023-02-04</time>
+    <a href="/2023/09/17/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/" class="article-date">
+  <time class="dt-published" datetime="2023-09-17T09:48:09.141Z" itemprop="datePublished">2023-09-17</time>
 </a>
     
   </div>
@@ -392,7 +352,7 @@ fatal: Authentication failed for &#39;https://github.com/xxxxx/springcloud-confi
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/04/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/">How to create a hexo blog using Github page</a>
+      <a class="p-name article-title" href="/2023/09/17/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/">How to create a hexo blog using Github page</a>
     </h1>
   
 
@@ -462,7 +422,47 @@ hexo version
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://june0x1.github.io/2023/02/04/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/" data-id="clektlump0004d7jxgyu53hdg" data-title="How to create a hexo blog using Github page" class="article-share-link">Share</a>
+      <a data-url="https://june0x1.github.io/2023/09/17/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/" data-id="cm6teaocq0005gejxdeoia1j7" data-title="How to create a hexo blog using Github page" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Doc" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/17/Doc/" class="article-date">
+  <time class="dt-published" datetime="2023-09-17T09:48:09.129Z" itemprop="datePublished">2023-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/17/Doc/">Doc Resource</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1-Reference"><a href="#1-Reference" class="headerlink" title="1-Reference"></a>1-Reference</h2><p><a target="_blank" rel="noopener" href="https://github.com/stelectronic/doc">Linux Device Drivers</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/lancyxd/pythoncore3">Core Python Application Programming</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://june0x1.github.io/2023/09/17/Doc/" data-id="cm6teaocl0001gejx0si9drn1" data-title="Doc Resource" class="article-share-link">Share</a>
       
       
       
@@ -492,7 +492,7 @@ hexo version
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
     </div>
   </div>
 
@@ -509,19 +509,19 @@ hexo version
           </li>
         
           <li>
-            <a href="/2023/02/20/Doc/">Doc Resource</a>
+            <a href="/2023/09/17/Github%20repositories%20upload/">Github Upload Tips</a>
           </li>
         
           <li>
-            <a href="/2023/02/08/Git%20Tips/">Git Tips</a>
+            <a href="/2023/09/17/Git%20Tips/">Git Tips</a>
           </li>
         
           <li>
-            <a href="/2023/02/04/Github%20repositories%20upload/">Github Upload Tips</a>
+            <a href="/2023/09/17/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/">How to create a hexo blog using Github page</a>
           </li>
         
           <li>
-            <a href="/2023/02/04/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/">How to create a hexo blog using Github page</a>
+            <a href="/2023/09/17/Doc/">Doc Resource</a>
           </li>
         
       </ul>
@@ -537,7 +537,7 @@ hexo version
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2023 June0x1<br>
+      &copy; 2025 June0x1<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
