@@ -75,6 +75,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Github repositories upload error" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/02/07/Github%20repositories%20upload%20error/" class="article-date">
+  <time class="dt-published" datetime="2025-02-07T13:51:35.004Z" itemprop="datePublished">2025-02-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/02/07/Github%20repositories%20upload%20error/">error Permission denied (publickey). fatal Could not read from remote repository. Please</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="Reason"><a href="#Reason" class="headerlink" title="Reason"></a>Reason</h3><pre><code class="bash">SSH key failure or error
+</code></pre>
+<h3 id="How-to-Solve"><a href="#How-to-Solve" class="headerlink" title="How to Solve"></a>How to Solve</h3><p>Generate a new SSH key</p>
+<pre><code class="bash">ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;
+</code></pre>
+<p>Find the id_rsa.pub file(the path is \home.ssh), and paste it’s contents into the GitHub(settings\ssh and gpg keys) content.</p>
+<p>And then push again.</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/W_317/article/details/106518894">https://blog.csdn.net/W_317/article/details/106518894</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://june0x1.github.io/2025/02/07/Github%20repositories%20upload%20error/" data-id="cm6uuiudx00002gjx6zw8gi2r" data-title="error Permission denied (publickey). fatal Could not read from remote repository. Please" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Ubuntu Setting Tips" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/09/17/Ubuntu%20Setting%20Tips/" class="article-date">
@@ -492,7 +538,7 @@ hexo version
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/02/">February 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
     </div>
   </div>
 
@@ -503,6 +549,10 @@ hexo version
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2025/02/07/Github%20repositories%20upload%20error/">error Permission denied (publickey). fatal Could not read from remote repository. Please</a>
+          </li>
         
           <li>
             <a href="/2023/09/17/Ubuntu%20Setting%20Tips/">Ubuntu Setting Tips</a>
@@ -518,10 +568,6 @@ hexo version
         
           <li>
             <a href="/2023/09/17/How%20to%20create%20a%20hexo%20blog%20using%20Github%20page/">How to create a hexo blog using Github page</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/17/Doc/">Doc Resource</a>
           </li>
         
       </ul>
